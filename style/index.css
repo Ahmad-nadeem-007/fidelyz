@@ -1,0 +1,607 @@
+:root {
+    --color-dark-blue: #091046;
+    --color-sky-blue: #316BFF;
+    --color-orange: #E56D1F;
+    --color-white: #FFFFFF;
+    --color-gray: #E6E7ED;
+    --color-dark-gray: #81879D;
+    --color-pink: #FDF3ED;
+    --color-light-black: #3B3E44;
+    --color-light-black2: #84878B;
+
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* ========= ReuseAble classes ======== */
+.text-dark-blue {
+    color: var(--color-dark-blue);
+}
+
+.bg-dark-blue {
+    background-color: var(--color-dark-blue);
+}
+
+.text-orange {
+    color: var(--color-orange);
+}
+
+.text-dark-gray {
+    color: var(--color-dark-gray);
+}
+
+.text-light-black {
+    color: var(--color-light-black);
+}
+
+.text-light-black2 {
+    color: var(--color-light-black2);
+}
+
+.font-dm {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.font-inter {
+
+    font-family: 'Inter', sans-serif;
+}
+
+.font-Manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+.font-Poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-Roboto {
+    font-family: 'Roboto Serif', serif;
+}
+
+.font-sora {
+    font-family: 'Sora', sans-serif;
+}
+
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
+.font-26 {
+    font-size: 26px;
+}
+
+.font-28 {
+    font-size: 28px;
+}
+
+.font-44 {
+    font-size: 44px;
+}
+
+.font-50 {
+    font-size: 50px;
+}
+
+.btn-white {
+    border: 2px solid var(--color-white);
+    padding: 12px 20px;
+    color: var(--color-white);
+    background-color: transparent;
+}
+
+.btn-orange {
+    border: none;
+    padding: 12px 20px;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+.btn-orange-border {
+    border: 2px solid var(--color-white);
+    padding: 12px 20px;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    box-shadow: -2px 2px 0px 0px  white;
+
+}
+
+/* ===== Navbar===== */
+nav .navbar-nav .nav-link {
+    color: var(--color-white) !important;
+    font-size: 18px;
+}
+
+nav .navbar-nav .nav-link.active {
+    color: var(--color-orange) !important;
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none !important;
+}
+
+.navbar {
+    border-bottom: 1px solid var(--color-dark-blue) !important;
+}
+
+/* ============= Hero Section ========== */
+.highlight-head::before {
+    content: '';
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/highlight.png);
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    left: -32px;
+    top: -12px;
+
+}
+
+.like-hand::before {
+    content: '';
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/likeHand.png);
+    background-size: cover;
+    display: inline-flex;
+    margin-top: -2px;
+    margin-left: -1px;
+    position: absolute;
+
+
+}
+
+.curve-img {
+    position: absolute;
+    left: 0;
+    top: 91%;
+    z-index: 1;
+}
+
+.newsletter-curve-img {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 85%;
+}
+
+/* --------- Earn Rewards ----------- */
+.earn-rewards {
+    background-color: var(--color-gray);
+    border-radius: 30px;
+}
+
+/* ----------Unlock Rewards ------------ */
+.unlock-Rewards {
+    background-image: url(../images/unlock-Rewards.png);
+    background-size: 100% 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* ------------------ Fidelyz lovers ----------- */
+.fidelyz-lovers {
+    background-color: var(--color-pink);
+}
+
+/* ------------ newsletter ---------- */
+.newsletter {
+    background-image: url(../images/intersect.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.newsletter-hand::after {
+    content: '';
+    height: 70px;
+    width: 70px;
+    background-image: url(../images/leftLikeHand.png);
+    background-size: cover;
+    display: inline-flex;
+    margin-top: 18px;
+    position: absolute;
+
+
+}
+
+.input-group input {
+    font-size: 18px;
+}
+
+.input-group button {
+    font-size: 18px;
+
+}
+
+/* =================== SLICK CONTROLERS =========== */
+.slick-next::before {
+    display: none !important;
+
+}
+
+.slick-prev::before {
+    display: none !important;
+
+}
+
+/* ================ SLICK DOTS =============== */
+.slick-dots li button {
+    content: "" !important;
+    width: auto !important;
+    border-radius: 12px;
+    background: var(--color-white) !important;
+    height: 7px !important;
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid var(--color-orange) !important;
+}
+
+.slick-dots li {
+    width: 10px !important;
+    margin: 0 8px !important;
+}
+
+.slick-dots .slick-active {
+    margin: 0 8px !important;
+    height: 20px !important;
+
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: rgba(0, 0, 0, 0) !important;
+}
+
+.slick-dots li.slick-active .slick-dots li {
+    margin-right: 12px;
+}
+
+.slick-dots li.slick-active button {
+    background: var(--color-orange) !important;
+    height: 20px !important;
+    color: var(--color-orange);
+}
+
+/* ====================== TERMS & CONDATION ===================== */
+.fa-square {
+    color: var(--color-sky-blue);
+}
+
+/* ====================== PRIVACY POLICY ===================== */
+.highlight-head-privacy::before {
+    content: '';
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/highlight-white.png);
+    background-size: cover;
+    display: flex;
+    position: absolute;
+    left: -32px;
+    top: -12px;
+
+}
+
+/* ===============MIX CLASS TERMS & PRIVACY ========== */
+.content-body-term-privacy h4 {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-light-black);
+
+}
+
+.content-body-term-privacy p {
+    color: var(--color-light-black2);
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+/* ===================== MEDIA QUERIES ================= */
+.Fidelyz_slider .avtar {
+    width: 75px;
+    height: 75px;
+}
+
+.Fidelyz_slider {
+    border-radius: 30px;
+}
+
+@media(max-width:992px) {
+    .curve-img {
+        top: 97%;
+    }
+
+    .unlock-Rewards {
+        background-size: cover;
+
+    }
+
+    .newsletter-curve-img {
+        top: 90%;
+    }
+}
+
+@media(max-width:768px) {
+    .newsletter-curve-img {
+        top: 95%;
+    }
+
+    .font-44 {
+        font-size: 40px;
+    }
+
+    .font-50 {
+        font-size: 45px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .font-18 {
+        font-size: 17px;
+    }
+
+    .input-group input {
+        font-size: 17px;
+    }
+
+    .input-group button {
+        font-size: 17px;
+
+    }
+
+    .Fidelyz_slider h5 {
+        font-size: 18px;
+    }
+
+    .font-22 {
+        font-size: 21px;
+    }
+}
+
+@media(max-width:576px) {
+    .font-44 {
+        font-size: 34px;
+    }
+
+    .font-50 {
+        font-size: 36px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .like-hand::before {
+        height: 38px;
+        width: 38px;
+    }
+
+    .font-18 {
+        font-size: 16px;
+    }
+
+    .input-group input {
+        font-size: 16px;
+    }
+
+    .input-group button {
+        font-size: 16px;
+
+    }
+
+    .Fidelyz_slider h5 {
+        font-size: 17px;
+    }
+
+    .Fidelyz_slider .avtar {
+        width: 40px;
+        height: 40px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .Fidelyz_slider {
+        border-radius: 12px;
+    }
+
+    .newsletter-hand::after {
+        display: none !important;
+    }
+
+    .font-22 {
+        font-size: 20px;
+    }
+
+    .highlight-head-privacy::before {
+        height: 30px;
+        width: 30px;
+
+        left: -25px;
+
+    }
+
+    .highlight-head::before {
+        height: 30px;
+        width: 30px;
+
+        left: -25px;
+
+    }
+
+    .content-body-term-privacy h4 {
+        font-family: 'Roboto Serif', serif;
+        color: var(--color-dark-blue);
+        font-weight: 600;
+
+    }
+
+    .content-body-term-privacy p {
+        color: var(--color-dark-blue);
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px !important;
+    }
+    .earn-rewards {
+        border-radius: 0px;
+    }
+}
+
+@media(max-width:468px) {
+    .curve-img {
+        top: 98%;
+    }
+
+    .font-44 {
+        font-size: 30px;
+    }
+
+    .font-50 {
+        font-size: 30px;
+    }
+
+    .like-hand::before {
+        height: 32px;
+        width: 32px;
+    }
+
+    .font-18 {
+        font-size: 15px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .input-group button {
+        font-size: 15px;
+
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .Fidelyz_slider h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+    .content-body-term-privacy p {
+        font-size: 14px !important;
+    }
+    .font-22 {
+        font-size: 19px;
+    }
+}
+
+@media(max-width:425px) {
+    .font-44 {
+        font-size: 26px;
+    }
+
+    .font-50 {
+        font-size: 26px;
+    }
+
+    .like-hand::before {
+        height: 28px;
+        width: 28px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .Fidelyz_slider h5 {
+        font-size: 15px;
+    }
+
+    .input-group input {
+        font-size: 12px;
+    }
+
+    .input-group button {
+        font-size: 13px;
+
+    }
+}
+
+@media(max-width:376px) {
+    .font-50 {
+        font-size: 24px;
+    }
+
+    .font-44 {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+    .content-body-term-privacy p {
+        font-size: 14px !important;
+    }
+
+    .like-hand::before {
+        height: 26px;
+        width: 26px;
+    }
+
+    .font-18 {
+        font-size: 14px;
+    }
+
+    .font-22 {
+        font-size: 18px;
+    }
+
+    .Fidelyz_slider h5 {
+        font-size: 14px;
+    }
+
+    .input-group input {
+        font-size: 10px;
+    }
+
+    .input-group button {
+        font-size: 12px;
+
+    }
+}
