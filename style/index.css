@@ -86,17 +86,18 @@ html {
     padding: 12px 20px;
     color: var(--color-white);
     background-color: transparent;
+    transition: ease-in-out;
+    transition-duration: .3s;
 }
 
 .btn-white:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 5px 11px 0px white;
+    transition: ease-in-out;
+    transition-duration: .3s;
+   background-color: var(--color-orange);
+   border: 2px solid var(--color-orange);
 }
 
-.btn-white:active {
-    transform: translateY(-1px);
-    box-shadow: 0px 5px 11px 0px white;
-}
+
 
 .btn-orange {
     border: none;
@@ -109,25 +110,31 @@ html {
     border: 2px solid var(--color-white);
     padding: 12px 20px;
     color: var(--color-white);
-    background-color: var(--color-orange);
-    box-shadow: -2px 2px 0px 0px var(--color-white);
-    transition: ease-in-out .4s;
+    /* box-shadow: -2px 2px 0px 0px var(--color-white); */
+    background: linear-gradient(to right, var(--color-white) 50%, var(--color-orange) 50%);
+    background-size: 207% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+  
+  .btn-orange-border:hover {
+    background-position: left bottom;
+    color: var(--color-light-black);
+    box-shadow: none;
+  }
+  .btn-orange-border .span-before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-white);
+    display: flex;
+    left: -3px;
+    top: 3px;
+    border-radius: 50px;
+    z-index: -2;
+  }
 
 
-}
-
-.btn-orange-border:hover {
-    /* background: var(--color-white); */
-    /* border: 2px solid var(--color-orange); */
-    /* box-shadow: -2px 2px 0px 0px var(--color-orange); */
-    transition: ease-in-out .4s;
-    /* color: var(--color-orange); */
-    transform: scale(1.09);
-}
-.btn-orange-border:active {
-    transform: scale(.8);
-
-}
 /* ===== Navbar===== */
 nav .navbar-nav .nav-link {
     color: var(--color-white) !important;
@@ -135,7 +142,11 @@ nav .navbar-nav .nav-link {
     margin-inline: 12px;
 
 }
+nav .navbar-nav .nav-link:hover{
+    color: var(--color-orange) !important;
 
+
+}
 nav .navbar-nav .nav-link.active {
     color: var(--color-orange) !important;
 }
@@ -272,11 +283,11 @@ nav .navbar-nav .nav-link.active {
     position: absolute;
 
 
-    animation: bounceTwo 1.5s ease-in-out 0s infinite normal forwards;
+    animation: bounceTwo 2s ease-in-out 0s infinite normal forwards;
 
 }
 .newsletter-handLeft{
-    animation: bounceTwo 1.5s ease-in-out 0s infinite normal forwards;
+    animation: bounceTwo 2s ease-in-out 0s infinite normal forwards;
 
 }
 
