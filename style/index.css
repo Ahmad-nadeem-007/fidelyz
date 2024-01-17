@@ -413,7 +413,6 @@ nav .navbar-nav .nav-link.active {
 
 }
 
-/* ===================== MEDIA QUERIES ================= */
 .Fidelyz_slider .avtar {
     width: 75px;
     height: 75px;
@@ -422,6 +421,21 @@ nav .navbar-nav .nav-link.active {
 .Fidelyz_slider {
     border-radius: 30px;
 }
+#google_element{
+    position: fixed;
+    top: 80%;
+    background: black;
+    z-index: 99;
+    padding: 12px;
+    right: 0;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px
+}
+#google_element select{
+    padding: 6px 8px !important;
+    border-radius: 30px;
+}
+/* ===================== MEDIA QUERIES ================= */
 
 @media(max-width:992px) {
     .curve-img {

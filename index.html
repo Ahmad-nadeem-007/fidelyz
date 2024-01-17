@@ -28,10 +28,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- --------JQUERY---------- -->
     <script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        function loadGoogleTranslate() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
 </head>
 
 <body>
-
+    <div id="google_element"></div>
     <!-- =========NAVBAR ============ -->
     <nav class="navbar navbar-expand-lg bg-dark-blue py-3 ">
         <div class="container">
@@ -88,8 +95,8 @@
                             at Loyalist Rewards, where savings meet satisfaction</p>
                         <span class="position-relative z-3 d-inline-block mt-lg-0 mt-3">
 
-                            <button class="btn-orange-border font-inter  rounded-5  "
-                                type="submit"> <span class="span-before"></span>Download&nbsp;&nbsp;<i
+                            <button class="btn-orange-border font-inter  rounded-5  " type="submit"> <span
+                                    class="span-before"></span>Download&nbsp;&nbsp;<i
                                     class="fa-solid fa-arrow-down-long"></i></button>
                         </span>
                     </div>
@@ -490,6 +497,7 @@
             <p class=" text-dark-blue mb-0 fw-semibold ">Copyright 2023 all rights Fidelyz reserved</p>
         </div>
     </footer>
+  
     <!-- -----BOOTSTRAP--JS------- -->
     <script src="./vendor/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
     <!-- ------slick---js------ -->
